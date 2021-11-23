@@ -41,9 +41,9 @@ namespace TimerExample
                 startButton.Text = "Start";
 
                 myWatch.Stop();
-            //    timeOutput.Text = myWatch.Elapsed + "";
-                //timeOutput.Text = myWatch.ElapsedMilliseconds + "";
-                //timeOutput.Text = myWatch.Elapsed.ToString(@"ss\:ff");
+                timeOutput.Text = myWatch.Elapsed + "";
+                timeOutput.Text = myWatch.ElapsedMilliseconds + "";
+                timeOutput.Text = myWatch.Elapsed.ToString(@"ss\:ff");
             }
         }
 
@@ -56,33 +56,33 @@ namespace TimerExample
 
             // based on the value of the counter a different colour is shown
 
-            //if (counter == 1)
-            //{
-            //    colourLabel.BackColor = Color.LightGreen;
-            //}
-            //else if (counter == 2)
-            //{
-            //    colourLabel.BackColor = Color.DodgerBlue;
-            //}
-            //else
-            //{
-            //    colourLabel.BackColor = Color.Yellow;
-            //    counter = 0;
-            //}
+            if (counter == 1)
+            {
+                colourLabel.BackColor = Color.LightGreen;
+            }
+            else if (counter == 2)
+            {
+                colourLabel.BackColor = Color.DodgerBlue;
+            }
+            else
+            {
+                colourLabel.BackColor = Color.Yellow;
+                counter = 0;
+            }
 
 
-            //if (colourLabel.BackColor == Color.Yellow)
-            //{
-            //    colourLabel.BackColor = Color.LightGreen;
-            //}
-            //else if (colourLabel.BackColor == Color.LightGreen)
-            //{
-            //    colourLabel.BackColor = Color.DodgerBlue;
-            //}
-            //else
-            //{
-            //    colourLabel.BackColor = Color.Yellow;
-            //}
+            if (colourLabel.BackColor == Color.Yellow)
+            {
+                colourLabel.BackColor = Color.LightGreen;
+            }
+            else if (colourLabel.BackColor == Color.LightGreen)
+            {
+                colourLabel.BackColor = Color.DodgerBlue;
+            }
+            else
+            {
+                colourLabel.BackColor = Color.Yellow;
+            }
 
             if (counter % 3 == 0)
             {
@@ -100,18 +100,18 @@ namespace TimerExample
                 }
             }
 
-            //if (counter % 3 == 1)
-            //{
-            //    colourLabel.BackColor = Color.LightGreen;
-            //}
-            //else if (counter % 3 == 2)
-            //{
-            //    colourLabel.BackColor = Color.DodgerBlue;
-            //}
-            //else
-            //{
-            //    colourLabel.BackColor = Color.Yellow;
-            //}
+            if (counter % 3 == 1)
+            {
+                colourLabel.BackColor = Color.LightGreen;
+            }
+            else if (counter % 3 == 2)
+            {
+                colourLabel.BackColor = Color.DodgerBlue;
+            }
+            else
+            {
+                colourLabel.BackColor = Color.Yellow;
+            }
         }
     }
 }
